@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Amaranth:700');
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background: #e9eaea !important;
+}
+
+.main-header {
+  line-height: 65px;
+  border-bottom: 1px solid #ddd;
+  background: #e9eaea;
+
+  .logo {
+    font-family: 'Amaranth', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #F72E2E;
+    padding: 16px 16px 16px 0;
+  }
+
+  .logo-subhead {
+    font-size: 22px;
+    font-weight: 300;
+    color: #636363;
+    border-left: 1px solid #ccc;
+    padding: 16px 0 16px 16px;
+  }
+
+  .logo-link:hover {
+    text-decoration: none;
+  }
+
+  .main-nav {
+    font-size: 14px;
+
+    a {
+      color: #24292e;
+      font-weight: bold;
+
+      .octicon {
+        vertical-align: middle;
+      }
+    }
+  }
+}

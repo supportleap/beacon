@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Leap Status</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="main-header">
+      <div class="container-lg">
+        <a class="logo-link" href="<%= root_url %>">
+          <span class="logo">leap</span>
+          <span class="logo-subhead">status</span>
+        </a>
+        <nav class="main-nav float-right">
+          <a href="https://supportleap.com">Back to Leap <%= octicon "chevron-right" %></a>
+        </nav>
+      </div>
+    </div>
+    <%= yield %>
+  </body>
+</html>
