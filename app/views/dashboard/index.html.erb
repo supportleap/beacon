@@ -1,33 +1,39 @@
+<%graphql
+  fragment Statuses on Root {
+    latestStatus {
+      ...Views::Dashboard::LatestStatus::Status
+    }
+
+    statuses(first: $first, includeLatest: false) {
+      nodes {
+        ...Views::Statuses::Status::Status
+      }
+    }
+  }
+%>
+<% data = Views::Dashboard::Index::Statuses.new(data) %>
+<% latest_status = data.latest_status %>
+<% statuses = data.statuses.nodes %>
 <section class="overall-status-container">
   <div class="big-status container-lg clearfix">
-    <div class="float-left pt-2 mr-3">
-      <span class="status-green"><%= octicon "check", height: "48" %></span>
-    </div>
-    <div class="float-left">
-      <h1>Everything operating normally.</h1>
-      <span class="mt-2 d-block text-gray text-small">Last updated 12 hours ago</span>
-    </div>
+    <%= render partial: "dashboard/latest_status", locals: { status: latest_status } %>
   </div>
 </section>
 <section class="status-history mt-3">
+  <% has_statuses = statuses.count > 0 %>
   <div class="container-lg">
     <div class="history-header mb-3 clearfix">
       <h2 class="float-left">Status History</h2>
-      <a href="#" class="mt-2 float-right">View all</a>
+      <% if has_statuses %>
+        <a href="<%= statuses_path %>" class="mt-2 float-right">View all</a>
+      <% end %>
     </div>
-    <div class="Box mb-2 p-3 clearfix">
-      <h3 class="clearfix">
-        <span class="status-yellow mr-2 float-left"><%= octicon "alert", height: "24" %></span>
-        We're investigating increased error rates.
-      </h3>
-      <span class="d-block mt-3 text-gray text-small">April 14th, 2018 &bull; 3:06 PM</span>
-    </div>
-    <div class="Box mb-2 p-3 clearfix">
-      <h3 class="clearfix">
-        <span class="status-red mr-2 float-left"><%= octicon "stop", height: "24" %></span>
-        We're investigating connection failures and working to resolve the problem.
-      </h3>
-      <span class="d-block mt-3 text-gray text-small">April 11th, 2018 &bull; 10:23 AM</span>
-    </div>
+    <% if has_statuses %>
+      <% statuses.each do |status| %>
+        <%= render partial: "statuses/status", locals: { status: status } %>
+      <% end %>
+    <% else %>
+      <p class="text-center pt-3">No status events yet. Hooray uptime!</p>
+    <% end %>
   </div>
 </section>

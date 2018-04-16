@@ -1,0 +1,35 @@
+<%graphql
+  fragment Statuses on Root {
+    statuses(first: $first, after: $after) {
+      nodes {
+        ...Views::Statuses::Status::Status
+      }
+      pageInfo {
+        endCursor
+        hasNextPage
+      }
+    }
+  }
+%>
+<% data = Views::Statuses::Index::Statuses.new(data) %>
+<section class="page-header p-4">
+  <div class="container-lg">
+    <h1>Status History</h1>
+  </div>
+</section>
+<section class="status-history mt-3">
+  <div class="container-lg">
+    <% if data.statuses.nodes.count > 0 %>
+      <% data.statuses.nodes.each do |status| %>
+        <%= render partial: "statuses/status", locals: { status: status } %>
+      <% end %>
+    <% else %>
+      <p class="text-center pt-3">Couldn't find any status events.</p>
+    <% end %>
+    <% if data.statuses.page_info.has_next_page %>
+      <nav class="paginate-container" aria-label="Pagination">
+        <a class="btn btn-outline" rel="next" href="?after=<%= data.statuses.page_info.end_cursor %>" aria-label="Next Page">Next page</a>
+      </nav>
+    <% end %>
+  </div>
+</section>
