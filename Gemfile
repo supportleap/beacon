@@ -20,6 +20,7 @@ gem 'graphql-client', '~> 0.12.2'
 group :development, :test do
   gem 'pry-byebug', '~> 3.6'
   gem 'dotenv-rails', '~> 2.2', '>= 2.2.2'
+  gem 'factory_bot_rails', '~> 4.8', '>= 4.8.2'
 end
 
 group :development do
