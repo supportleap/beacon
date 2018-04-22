@@ -1,5 +1,5 @@
 <%graphql
-  fragment Statuses on Root {
+  fragment Statuses on Query {
     statuses(first: $first, after: $after) {
       nodes {
         ...Views::Statuses::Status::Status

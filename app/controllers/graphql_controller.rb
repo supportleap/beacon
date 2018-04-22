@@ -17,7 +17,7 @@ class GraphqlController < ApplicationController
   private
 
   def authenticate
-    api_key = ENV["API_KEY"]
+    api_key = Beacon.api_key
 
     if !api_key.present? || api_key.blank?
       raise RuntimeError, "Please set API_KEY in the environment to a randomly generated token."

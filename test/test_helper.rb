@@ -1,10 +1,14 @@
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
 require 'rails/test_help'
+require 'mocha/minitest'
 
 class ActiveSupport::TestCase
-  # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
-  fixtures :all
+  include FactoryBot::Syntax::Methods
 
-  # Add more helper methods to be used by all tests here...
+  def execute_query(query, variables: {}, context: {})
+    variables = variables.map { |k, v| [k.to_s, v] }.to_h
+
+    Graph.execute(query, variables: variables, context: context)
+  end
 end

@@ -4,8 +4,8 @@ module Graph
   class Schema < GraphQL::Schema
     GraphQL::Relay::ConnectionType.default_nodes_field = true
 
-    mutation(Mutations::Root)
-    query(Queries::Root)
+    mutation(Objects::Mutation)
+    query(Objects::Query)
 
     def self.id_from_object(object, _, _)
       object.global_relay_id
@@ -13,9 +13,18 @@ module Graph
 
     def self.object_from_id(id, context)
       type_name, model_id = GraphQL::Schema::UniqueWithinType.decode(id)
+
+      unless Graph::Schema.types.key?(type_name)
+        return raise GraphQL::ExecutionError.new("Could not resolve to a node with the global id of '#{id}'.")
+      end
+
       klass = "::#{type_name}".constantize
 
-      klass.find(model_id)
+      if obj = klass.find_by(id: model_id)
+        obj
+      else
+        raise GraphQL::ExecutionError.new("Could not resolve to a node with the global id of '#{id}'.")
+      end
     end
 
     def self.resolve_type(type, object, context)

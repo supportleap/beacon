@@ -1,5 +1,5 @@
 <%graphql
-  fragment Statuses on Root {
+  fragment Statuses on Query {
     latestStatus {
       ...Views::Dashboard::LatestStatus::Status
     }
