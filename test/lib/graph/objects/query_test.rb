@@ -2,7 +2,7 @@
 
 require 'test_helper'
 
-class Graph::Queries::RootTest < ActiveSupport::TestCase
+class Graph::Objects::QueryTest < ActiveSupport::TestCase
   setup do
     @green_status = create(:status)
     @yellow_status = create(:yellow_status)
