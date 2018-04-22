@@ -21,6 +21,7 @@ group :development, :test do
   gem 'pry-byebug', '~> 3.6'
   gem 'dotenv-rails', '~> 2.2', '>= 2.2.2'
   gem 'factory_bot_rails', '~> 4.8', '>= 4.8.2'
+  gem 'mocha', '~> 1.2', '>= 1.2.1'
 end
 
 group :development do
