@@ -16,6 +16,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'octicons_helper', '~> 4.3'
 gem 'graphql', '~> 1.8.0.pre10'
 gem 'graphql-client', '~> 0.12.2'
+gem 'chatops-controller', '~> 3.0', '>= 3.0.3'
 
 group :development, :test do
   gem 'pry-byebug', '~> 3.6'
