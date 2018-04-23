@@ -42,7 +42,7 @@ jobs:
       - save_cache:
           paths:
             - ./vendor/gems
-          key: v1-dependencies-{{ checksum "Gemfile.lock" }}
+          key: v2-dependencies-{{ checksum "Gemfile.lock" }}
 
       # Database setup
       - run: bundle exec rake db:create
