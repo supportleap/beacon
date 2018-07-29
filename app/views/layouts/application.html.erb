@@ -11,14 +11,18 @@
 
   <body>
     <div class="main-header">
-      <div class="container-lg">
-        <a class="logo-link" href="<%= root_url %>">
-          <span class="logo">leap</span>
-          <span class="logo-subhead">status</span>
-        </a>
-        <nav class="main-nav float-right">
-          <a href="https://supportleap.com">Back to Leap <%= octicon "chevron-right" %></a>
-        </nav>
+      <div class="container-lg d-flex flex-items-center">
+        <div class="col-10">
+          <a class="logo-link" href="<%= root_url %>">
+            <span class="logo">leap</span>
+            <span class="logo-subhead">status</span>
+          </a>
+        </div>
+        <div class="col-2">
+          <nav class="main-nav text-right">
+            <a href="https://supportleap.com">Back to Leap <%= octicon "chevron-right" %></a>
+          </nav>
+        </div>
       </div>
     </div>
     <%= yield %>

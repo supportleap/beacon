@@ -4,7 +4,7 @@ require "test_helper"
 
 class GraphqlControllerTest < ActionDispatch::IntegrationTest
   setup do
-    Beacon.stubs(:api_key).returns("abc123")
+    Beacon.stubs(:api_token).returns("abc123")
   end
 
   test "rejects access if api token does not match" do

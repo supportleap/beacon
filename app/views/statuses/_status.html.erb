@@ -5,18 +5,15 @@
     createdAt
   }
 %>
-<% status = Views::Statuses::Status::Status.new(status) %>
-<div class="Box mb-2 p-3 clearfix">
-  <h3 class="clearfix">
-    <% if status.level == "GREEN" %>
-      <span class="status-green mr-2 float-left"><%= octicon "check", height: "24" %></span>
-    <% elsif status.level == "YELLOW" %>
-      <span class="status-yellow mr-2 float-left"><%= octicon "alert", height: "24" %></span>
-    <% else %>
-      <span class="status-red mr-2 float-left"><%= octicon "stop", height: "24" %></span>
-    <% end %>
-    <%= status.message %>
-  </h3>
+<%
+  status = Views::Statuses::Status::Status.new(status)
+  level = status.level.downcase
+%>
+<div class="bg-white mb-3 p-3 box-shadow-medium">
+  <div class="d-flex flex-items-center">
+    <span class="status-<%= level %> mr-2"><%= octicon "primitive-dot", height: "24" %></span>
+    <h3><%= status.message %></h3>
+  </div>
   <span class="d-inline-block mt-3 text-gray text-small tooltipped tooltipped-s" aria-label="<%= status.created_at %>">
     <%= DateTime.parse(status.created_at).in_time_zone.strftime("%B %d, %Y - %-I:%M %p %Z") %>
   </span>

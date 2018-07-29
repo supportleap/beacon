@@ -7,26 +7,28 @@
 %>
 <% status = Views::Dashboard::LatestStatus::Status.new(status) %>
 <% if status.present? %>
-  <div class="float-left pt-2 mr-3">
-    <% if status.level == "GREEN" %>
-      <span class="status-green"><%= octicon "check", height: "48" %></span>
-    <% elsif status.level == "YELLOW" %>
-      <span class="status-yellow"><%= octicon "alert", height: "48" %></span>
-    <% else %>
-      <span class="status-red"><%= octicon "stop", height: "48" %></span>
-    <% end %>
-  </div>
-  <div class="float-left">
-    <h1><%= status.message %></h1>
-    <span class="d-inline-block text-gray text-small tooltipped tooltipped-s" aria-label="<%= status.created_at %>">
-      Last updated <%= time_ago_in_words(status.created_at) %> ago
-    </span>
-  </div>
+  <section id="main-status">
+    <div class="d-flex flex-items-center">
+      <% if status.level == "GREEN" %>
+        <span class="status-green mr-3"><%= octicon "primitive-dot", height: "48" %></span>
+      <% elsif status.level == "YELLOW" %>
+        <span class="status-yellow mr-3"><%= octicon "primitive-dot", height: "48" %></span>
+      <% else %>
+        <span class="status-red mr-3"><%= octicon "primitive-dot", height: "48" %></span>
+      <% end %>
+      <h1><%= status.message %></h1>
+    </div>
+    <div class="main-status-timestamp">
+      <span class="d-inline-block text-gray text-small tooltipped tooltipped-s" aria-label="<%= status.created_at %>">
+        Last updated <%= time_ago_in_words(status.created_at) %> ago
+      </span>
+    </div>
+  </section>
 <% else %>
-  <div class="float-left pt-2 mr-3">
-    <span class="status-yellow"><%= octicon "question", height: "48" %></span>
-  </div>
-  <div class="float-left">
-    <h1>Current status unknown.</h1>
-  </div>
+  <section id="main-status">
+    <div class="d-flex flex-items-center">
+      <span class="status-yellow mr-3"><%= octicon "primitive-dot", height: "48" %></span>
+      <h1>Current status unknown.</h1>
+    </div>
+  </section>
 <% end %>
