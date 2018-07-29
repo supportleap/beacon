@@ -19,8 +19,8 @@ class DashboardControllerTest < ActionDispatch::IntegrationTest
     get "/"
 
     assert_response :success
-    assert_select ".status-history .Box", 1
-    assert_select ".status-history .Box h3", /#{@green_status.message}/
+    assert_select ".status-history .status-box", 1
+    assert_select ".status-history .status-box h3", /#{@green_status.message}/
   end
 
   test "#index works if no status events" do

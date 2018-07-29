@@ -9,7 +9,7 @@
   status = Views::Statuses::Status::Status.new(status)
   level = status.level.downcase
 %>
-<div class="bg-white mb-3 p-3 box-shadow-medium">
+<div class="status-box bg-white mb-3 p-3 box-shadow-medium">
   <div class="d-flex flex-items-center">
     <span class="status-<%= level %> mr-2"><%= octicon "primitive-dot", height: "24" %></span>
     <h3><%= status.message %></h3>
