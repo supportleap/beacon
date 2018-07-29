@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Status.create(level: :green, message: Status.default_message_for("green"))
+Status.create(level: :red, message: Status.default_message_for("red"))
+Status.create(level: :yellow, message: Status.default_message_for("yellow"))
+Status.create(level: :green, message: Status.default_message_for("green"))
