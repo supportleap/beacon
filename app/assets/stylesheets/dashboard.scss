@@ -1,7 +1,6 @@
 .overall-status-container {
   background: #fff;
   padding: 125px 0;
-  border-bottom: 1px solid #ddd;
 }
 
 .big-status {
@@ -10,9 +9,18 @@
   }
 }
 
+.main-status-timestamp {
+  margin-left: 42px;
+}
+
 .history-header {
+  h2 {
+    color: #2D3138;
+  }
+
   a {
-    color: #24292e;
-    text-decoration: underline;
+    color: #5A5B68;
+    text-decoration: none;
+    font-weight: bold;
   }
 }

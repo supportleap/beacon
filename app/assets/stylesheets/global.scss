@@ -3,13 +3,12 @@
 body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  background: #e9eaea !important;
+  background: #F5F5F5 !important;
 }
 
 .main-header {
   line-height: 65px;
-  border-bottom: 1px solid #ddd;
-  background: #e9eaea;
+  background: #fff;
 
   .logo {
     font-family: 'Amaranth', sans-serif;
@@ -44,7 +43,6 @@ body {
     }
   }
 }
-
 
 .page-header {
   background: #fff;

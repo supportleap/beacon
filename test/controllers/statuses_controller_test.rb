@@ -13,10 +13,10 @@ class StatusesControllerTest < ActionDispatch::IntegrationTest
     get "/statuses"
 
     assert_response :success
-    assert_select ".status-history .Box", 3
-    assert_select ".status-history .Box h3", /#{@red_status.message}/
-    assert_select ".status-history .Box h3", /#{@yellow_status.message}/
-    assert_select ".status-history .Box h3", /#{@green_status.message}/
+    assert_select ".status-history .status-box", 3
+    assert_select ".status-history .status-box h3", /#{@red_status.message}/
+    assert_select ".status-history .status-box h3", /#{@yellow_status.message}/
+    assert_select ".status-history .status-box h3", /#{@green_status.message}/
   end
 
   test "#index shows next button if has next page" do
