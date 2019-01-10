@@ -4597,247 +4597,296 @@ prepend-http@^1.0.0:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-1.0.4.tgz#d4f4562b0ce3696e41ac52d0e002e57a635dc6dc"
 
-primer-alerts@1.5.5:
-  version "1.5.5"
-  resolved "https://registry.yarnpkg.com/primer-alerts/-/primer-alerts-1.5.5.tgz#0bd2bdd0aae92a0525a9af3d2e716a2eabb48a60"
+primer-alerts@1.5.12:
+  version "1.5.12"
+  resolved "https://registry.yarnpkg.com/primer-alerts/-/primer-alerts-1.5.12.tgz#56c09201beb578534000386c56a7a6047a308f19"
+  integrity sha512-PPgRihhkKDtiY6PeHvszwsrpWPlDmmS89eYqQWPZnVaTPZpyjsQYJyQSm/BxaAlmWHdG0+zBkwSmfaXlUkn1pA==
   dependencies:
-    primer-support "4.5.2"
+    primer-support "4.7.1"
 
-primer-avatars@1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/primer-avatars/-/primer-avatars-1.5.2.tgz#9c72821768555a5aacf5666d7b71475a80da1115"
+primer-avatars@1.5.9:
+  version "1.5.9"
+  resolved "https://registry.yarnpkg.com/primer-avatars/-/primer-avatars-1.5.9.tgz#c27a1cc00faac585ca086a5acb167ffd78d69833"
+  integrity sha512-F1ZO5bdl1efgn/UpKY7mPY1Yediw2dIx2z1qXYR6TLM0n1IV/8CNKCcNOZcr8JfaONYaOO6YlUUIzHkWULn4Vw==
   dependencies:
-    primer-support "4.5.2"
+    primer-support "4.7.1"
 
-primer-base@1.7.0:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/primer-base/-/primer-base-1.7.0.tgz#dfc23b3f485437e36f8dbc8f02a64dcf82aded6d"
+primer-base@1.9.1:
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/primer-base/-/primer-base-1.9.1.tgz#31c092e52e1ebc9861b2d0df70a2f4958f64ad19"
+  integrity sha512-YvWS5Wk976d3hlV5+z0rse9RqmltUvrv4eIewA70HAltvhXgjGX8bC6ZQuVXNrDxNFGOofogRV6t4GOYrRwDoQ==
   dependencies:
-    primer-support "4.5.2"
+    primer-support "4.7.1"
 
-primer-blankslate@1.4.5:
-  version "1.4.5"
-  resolved "https://registry.yarnpkg.com/primer-blankslate/-/primer-blankslate-1.4.5.tgz#6c658392c6d00303e14a135f177b54c212ff2227"
-  dependencies:
-    primer-support "4.5.2"
-
-primer-box@2.5.5:
-  version "2.5.5"
-  resolved "https://registry.yarnpkg.com/primer-box/-/primer-box-2.5.5.tgz#8fbead6bdbf1d201ad81f1815172d723f499b4bb"
-  dependencies:
-    primer-support "4.5.2"
-
-primer-branch-name@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/primer-branch-name/-/primer-branch-name-1.0.3.tgz#5d8fa79f953008073fafd46e14c2ed5e2a56a52c"
-  dependencies:
-    primer-support "4.5.2"
-
-primer-breadcrumb@1.5.1:
+primer-blankslate@1.5.1:
   version "1.5.1"
-  resolved "https://registry.yarnpkg.com/primer-breadcrumb/-/primer-breadcrumb-1.5.1.tgz#98740352445eb5beabb48a51a81f08389b1defd0"
+  resolved "https://registry.yarnpkg.com/primer-blankslate/-/primer-blankslate-1.5.1.tgz#c1dd2acdf321d6d12e3c3d57b64a7b17cad74ec7"
+  integrity sha512-bYZsYoKuP3slQqaje/HdHSdultgKXkSKeyR0SQHXJdPfmhGmHENjM1TBVA5suR6raOrM2jeM66iPSjh5UR9tYw==
   dependencies:
-    primer-support "4.5.2"
+    primer-support "4.7.1"
 
-primer-buttons@2.5.3:
-  version "2.5.3"
-  resolved "https://registry.yarnpkg.com/primer-buttons/-/primer-buttons-2.5.3.tgz#b5a40d0b325c6f6b9e04c5515152a309fd963095"
+primer-box@2.5.12:
+  version "2.5.12"
+  resolved "https://registry.yarnpkg.com/primer-box/-/primer-box-2.5.12.tgz#c3e86461dacf2690521a697b6035264f5e057917"
+  integrity sha512-NsOhboJeEUTC6edOq5oBUvBznKsfGuGuNX6lPoYkKpXc5BKzcLFiPpnPSl+5LHSx9DUQLRQwSIxEdXwVY2D1iQ==
   dependencies:
-    primer-support "4.5.2"
+    primer-support "4.7.1"
 
-primer-core@6.8.0:
-  version "6.8.0"
-  resolved "https://registry.yarnpkg.com/primer-core/-/primer-core-6.8.0.tgz#47c8b1fbad3d111c59f1e8ac4199c56f5d312550"
+primer-branch-name@1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/primer-branch-name/-/primer-branch-name-1.0.10.tgz#06220d71a9c6d21a4bd30a72f4cd2853c03df8fa"
+  integrity sha512-Hhs6wwLNc3tkrsNkFNiUYYTOUb11xTbDOKCIOO8a73gyC1CVo4zLebSHQETgWb47NcS/Ib2QFw04QjLR9uH2Zw==
   dependencies:
-    primer-base "1.7.0"
-    primer-box "2.5.5"
-    primer-breadcrumb "1.5.1"
-    primer-buttons "2.5.3"
-    primer-forms "2.1.0"
-    primer-layout "1.4.5"
-    primer-navigation "1.5.3"
-    primer-support "4.5.2"
-    primer-table-object "1.4.5"
-    primer-tooltips "1.5.3"
-    primer-truncate "1.4.5"
-    primer-utilities "4.9.0"
+    primer-support "4.7.1"
 
-primer-forms@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/primer-forms/-/primer-forms-2.1.0.tgz#d27b4bba8bd214a097fe8a5615ed6837146feb2d"
+primer-breadcrumb@1.5.8:
+  version "1.5.8"
+  resolved "https://registry.yarnpkg.com/primer-breadcrumb/-/primer-breadcrumb-1.5.8.tgz#8621afa42fb57e13e69bf089c9567414433bd5cc"
+  integrity sha512-urPQHBjnl0Oj4nxTaf9WkcpiaZ0eJAcll6KGbgEfNZtg196yqz6JZZ9eWL4UWaFVeaYAs9z8NUIZdMWA+Kh8ag==
   dependencies:
-    primer-support "4.5.2"
+    primer-support "4.7.1"
 
-primer-labels@1.5.5:
-  version "1.5.5"
-  resolved "https://registry.yarnpkg.com/primer-labels/-/primer-labels-1.5.5.tgz#cb561ca8f5d75c7b5f0489a7b43715779a3cb470"
+primer-buttons@2.6.3:
+  version "2.6.3"
+  resolved "https://registry.yarnpkg.com/primer-buttons/-/primer-buttons-2.6.3.tgz#c5c6569b38e7442cf43fd7882fd854ed9edefcc6"
+  integrity sha512-m1yWevThQA6hn0nW8EtccLud0eOfm6diT255/rFkFFDRMzlryCz/3w3jzeRpL92ANppmzOgl7aMxbMqYkKCwLQ==
   dependencies:
-    primer-support "4.5.2"
+    primer-support "4.7.1"
 
-primer-layout@1.4.5:
-  version "1.4.5"
-  resolved "https://registry.yarnpkg.com/primer-layout/-/primer-layout-1.4.5.tgz#6fcdca670ef0bf5c428abe8be8649d83c51e796f"
+primer-core@6.10.7:
+  version "6.10.7"
+  resolved "https://registry.yarnpkg.com/primer-core/-/primer-core-6.10.7.tgz#90d3942feae1fc5581cb75566a08e73f012f3365"
+  integrity sha512-xkuVxFPvsYAJaziA1nw7hSOkLqwDZ+EpglD1A1u7dzC8dxv5etTDvzdn7rMP71o0/kgciZHz2cBtUYylU4D6fg==
   dependencies:
-    primer-support "4.5.2"
+    primer-base "1.9.1"
+    primer-box "2.5.12"
+    primer-breadcrumb "1.5.8"
+    primer-buttons "2.6.3"
+    primer-forms "2.1.7"
+    primer-layout "1.6.1"
+    primer-navigation "1.5.10"
+    primer-pagination "1.0.6"
+    primer-support "4.7.1"
+    primer-table-object "1.4.12"
+    primer-tooltips "1.5.10"
+    primer-truncate "1.4.12"
+    primer-utilities "4.14.2"
 
-primer-markdown@3.7.5:
-  version "3.7.5"
-  resolved "https://registry.yarnpkg.com/primer-markdown/-/primer-markdown-3.7.5.tgz#bb8e51646846a26b68aab4d9e7858c2e36d298f8"
+primer-forms@2.1.7:
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/primer-forms/-/primer-forms-2.1.7.tgz#b43f2d4b72002173ddf8d40555666c07fbab9b48"
+  integrity sha512-w+tVrBOO4dcd5ZOA9At9Lp72Uap2SVFhtOunBL01z3sNgZXSmYQbLqw5NBoo7jygM6nvesZPNqWw8pfpzH8LFg==
   dependencies:
-    primer-support "4.5.2"
+    primer-support "4.7.1"
 
-primer-marketing-buttons@1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/primer-marketing-buttons/-/primer-marketing-buttons-1.0.4.tgz#bf0248034427f60366e209974768d5f670947011"
+primer-labels@1.5.12:
+  version "1.5.12"
+  resolved "https://registry.yarnpkg.com/primer-labels/-/primer-labels-1.5.12.tgz#101d4436a7f2429f6bf5e2761b2a51d8153b5e1d"
+  integrity sha512-Pu0ywesqiYnOcs5hretB4/jBbrIJ75fnQ0fXSAcLdu3/CXjf6v2v9BK6S6gmmhr7PL8VenfpIZ8F1yvPUrZWwQ==
   dependencies:
-    primer-support "4.5.2"
+    primer-support "4.7.1"
 
-primer-marketing-support@1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/primer-marketing-support/-/primer-marketing-support-1.5.0.tgz#6a1e20bf28452a114a3708d414d243246b0d0090"
-
-primer-marketing-type@1.4.5:
-  version "1.4.5"
-  resolved "https://registry.yarnpkg.com/primer-marketing-type/-/primer-marketing-type-1.4.5.tgz#5f63ee71f8a7bd9beaabfb2e016ad64b6954d6a3"
-  dependencies:
-    primer-marketing-support "1.5.0"
-    primer-support "4.5.2"
-
-primer-marketing-utilities@1.6.1:
+primer-layout@1.6.1:
   version "1.6.1"
-  resolved "https://registry.yarnpkg.com/primer-marketing-utilities/-/primer-marketing-utilities-1.6.1.tgz#53b6fff90838b17c05945c742105124cd68ae299"
+  resolved "https://registry.yarnpkg.com/primer-layout/-/primer-layout-1.6.1.tgz#1bd2e88e8f4798880878e592c018ff37ca56ecf7"
+  integrity sha512-x6tvGTnJqKc7GfJwHxBhM0k6TtdfGrzkB9QKhjqnTR4Em+Cat860r6+62JowSjyA+4DzM89fBHS6TdIR3TXVvQ==
   dependencies:
-    primer-marketing-support "1.5.0"
-    primer-support "4.5.2"
+    primer-support "4.7.1"
 
-primer-marketing@6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/primer-marketing/-/primer-marketing-6.2.0.tgz#23ca5c4e03d8336ec5c24f36ac8feb7d600a7cda"
+primer-markdown@3.7.12:
+  version "3.7.12"
+  resolved "https://registry.yarnpkg.com/primer-markdown/-/primer-markdown-3.7.12.tgz#fb8629f87e66bc213fb342cab8ebf8367e3b6692"
+  integrity sha512-cyWSxBQoNo7D5vjnf4eLvHmS1aQyDEmaKnJLiSoj1A9bq7IneAP/okLHRqiTXn7wy9MD/ixm4me9cVpuxQY9hw==
   dependencies:
-    primer-marketing-buttons "1.0.4"
-    primer-marketing-support "1.5.0"
-    primer-marketing-type "1.4.5"
-    primer-marketing-utilities "1.6.1"
-    primer-page-headers "1.4.5"
-    primer-page-sections "1.4.5"
-    primer-support "4.5.2"
-    primer-tables "1.4.5"
+    primer-support "4.7.1"
 
-primer-navigation@1.5.3:
-  version "1.5.3"
-  resolved "https://registry.yarnpkg.com/primer-navigation/-/primer-navigation-1.5.3.tgz#4d32734faed52b34013fd710353400c7914e0c56"
+primer-marketing-buttons@1.0.12:
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/primer-marketing-buttons/-/primer-marketing-buttons-1.0.12.tgz#d361a68473d5a078966bc1cf3d0189c0e1cbee35"
+  integrity sha512-Nw+DdFUa+bhBCUVPDHdTEUR+3ihLbyL7ivuEytc+FcdwO1aYvyiPEp3IK226ZP6rFp1m2dChQAovRMOxp0071g==
   dependencies:
-    primer-support "4.5.2"
+    primer-support "4.7.1"
 
-primer-page-headers@1.4.5:
-  version "1.4.5"
-  resolved "https://registry.yarnpkg.com/primer-page-headers/-/primer-page-headers-1.4.5.tgz#74ab7ade7da08c7ee8ae57092b70f82b747cb870"
+primer-marketing-support@1.5.5:
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/primer-marketing-support/-/primer-marketing-support-1.5.5.tgz#0cc038f38851bf2e85b1587a59b97f118d8f916c"
+  integrity sha512-65FiUjpK4bMY7mOFnDr56ByLLfSYMOpbrHXKqZFg1PuWXXB+Dp1t37nRJE6mR4/Bn7kXi0VZjnK+1vt8BmzmnA==
+
+primer-marketing-type@1.4.12:
+  version "1.4.12"
+  resolved "https://registry.yarnpkg.com/primer-marketing-type/-/primer-marketing-type-1.4.12.tgz#beec44ec6737068ad2644601676b1322e246c4ad"
+  integrity sha512-mHQXCbVmZQpIun9P4SetDvIBS+cmNfDQekmKhWUEFG6hSaQSu+ztOIf3jH4/1Qz1IIf9+Sp0nyCX1iw9bI9FoA==
   dependencies:
-    primer-marketing-support "1.5.0"
-    primer-support "4.5.2"
+    primer-marketing-support "1.5.5"
+    primer-support "4.7.1"
 
-primer-page-sections@1.4.5:
-  version "1.4.5"
-  resolved "https://registry.yarnpkg.com/primer-page-sections/-/primer-page-sections-1.4.5.tgz#752f797e70ecd61d1a5b6f4bea6078a22a5b40d6"
+primer-marketing-utilities@1.7.2:
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/primer-marketing-utilities/-/primer-marketing-utilities-1.7.2.tgz#0e9f6cfa3fca7a24fe01cb8b1f8bcb8a4cea3719"
+  integrity sha512-IJ4+lbHuRK1fQpl8Av7VtTX9k6P20O/r6Mr85PaOkLeB2wtXSnCFvydRleqFZBMjqJFIeeeVMm78hGhICbCqHw==
   dependencies:
-    primer-marketing-support "1.5.0"
-    primer-support "4.5.2"
+    primer-marketing-support "1.5.5"
+    primer-support "4.7.1"
 
-primer-popover@0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/primer-popover/-/primer-popover-0.0.6.tgz#36d57e4d68b613404cdd6fb93362d27785025aa2"
+primer-marketing@6.3.2:
+  version "6.3.2"
+  resolved "https://registry.yarnpkg.com/primer-marketing/-/primer-marketing-6.3.2.tgz#0716afd4a17a015754028f6c1d72b172b96fa2ba"
+  integrity sha512-vJKwOZaw4MmGlo6bFHzdbvEC6VAdmK0YwGO+1nMOFOeCXGru7WdLUClQweVl13me828lTKp767uqonYTtNwVBQ==
   dependencies:
-    primer-support "4.5.2"
+    primer-marketing-buttons "1.0.12"
+    primer-marketing-support "1.5.5"
+    primer-marketing-type "1.4.12"
+    primer-marketing-utilities "1.7.2"
+    primer-page-headers "1.5.2"
+    primer-page-sections "1.5.2"
+    primer-support "4.7.1"
+    primer-tables "1.5.2"
 
-primer-product@5.6.2:
-  version "5.6.2"
-  resolved "https://registry.yarnpkg.com/primer-product/-/primer-product-5.6.2.tgz#84d7c5c11ad5aee5d8bb97c63c8545ceba05b424"
+primer-navigation@1.5.10:
+  version "1.5.10"
+  resolved "https://registry.yarnpkg.com/primer-navigation/-/primer-navigation-1.5.10.tgz#8446639700a4710212da2b90748986d13782f296"
+  integrity sha512-Q5NZXSSbRiyyNd7cvx2FGaKbqwXANVSdx2lG3jDY28eR+p63q8axsvifsEBlcORAxuDkS+awqSUqPCqEDdOpow==
   dependencies:
-    primer-alerts "1.5.5"
-    primer-avatars "1.5.2"
-    primer-blankslate "1.4.5"
-    primer-branch-name "1.0.3"
-    primer-labels "1.5.5"
-    primer-markdown "3.7.5"
-    primer-popover "0.0.6"
-    primer-subhead "1.0.3"
-    primer-support "4.5.2"
+    primer-support "4.7.1"
 
-primer-subhead@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/primer-subhead/-/primer-subhead-1.0.3.tgz#1b15cf7239e73769e64e873b9cdfd58b5e8e4291"
+primer-page-headers@1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/primer-page-headers/-/primer-page-headers-1.5.2.tgz#0d49c626d152c918f861b55289cc0e48017501b8"
+  integrity sha512-Ca822722XxouZK0gAL23A+S0T3bzLrUvR+ZA+xGtAByULudPhe24FCSiXhdOOBc3WmwpkXYCGLQwItLtORVmYw==
   dependencies:
-    primer-support "4.5.2"
+    primer-marketing-support "1.5.5"
+    primer-support "4.7.1"
 
-primer-support@4.5.2:
-  version "4.5.2"
-  resolved "https://registry.yarnpkg.com/primer-support/-/primer-support-4.5.2.tgz#daab9a48881b6953e8e6ca01865a2f415bf777c5"
-
-primer-table-object@1.4.5:
-  version "1.4.5"
-  resolved "https://registry.yarnpkg.com/primer-table-object/-/primer-table-object-1.4.5.tgz#a45d59f33a9841008d2f079140ee8aaad674839b"
+primer-page-sections@1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/primer-page-sections/-/primer-page-sections-1.5.2.tgz#777b660b9fdc9570cf2be3b4c5430ceb9808b7c7"
+  integrity sha512-F93dzA9SDJCOIhrxtnlfDjbDxwwDm6A6C8r3muX2wuzaZSGe9HmwB4w6QusHtqP+cXYAdnvXIB+PJLZiQTZkSw==
   dependencies:
-    primer-support "4.5.2"
+    primer-marketing-support "1.5.5"
+    primer-support "4.7.1"
 
-primer-tables@1.4.5:
-  version "1.4.5"
-  resolved "https://registry.yarnpkg.com/primer-tables/-/primer-tables-1.4.5.tgz#b79c284599a9100a147400eb265532beea63b7ca"
+primer-pagination@1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/primer-pagination/-/primer-pagination-1.0.6.tgz#27091af83f36243a6548f1af6031dae6b4236085"
+  integrity sha512-T33UDrsmSHTFu5VOfyRCuUuijXWOmW+9Pc0IiJyrl/W7iV0gA80Xap+cVLcH7lwKeQJLNnD2Ou8PGKWWTydZFA==
   dependencies:
-    primer-marketing-support "1.5.0"
-    primer-support "4.5.2"
+    primer-support "4.7.1"
 
-primer-tooltips@1.5.3:
-  version "1.5.3"
-  resolved "https://registry.yarnpkg.com/primer-tooltips/-/primer-tooltips-1.5.3.tgz#0e666e31136bec634a84e9ecb9d76169d091e249"
+primer-popover@0.1.7:
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/primer-popover/-/primer-popover-0.1.7.tgz#4d09e8e5af448fcd928cd2295e8f70a61a910784"
+  integrity sha512-zyOmliGD5Cy5An+hH29siklmbqJQh40wWaxGKP7AGFUAH4YdU+vnRbHDjcw7EUemeSUD6SOdw33DmcHz/zQhQw==
   dependencies:
-    primer-support "4.5.2"
+    primer-support "4.7.1"
 
-primer-truncate@1.4.5:
-  version "1.4.5"
-  resolved "https://registry.yarnpkg.com/primer-truncate/-/primer-truncate-1.4.5.tgz#427fa47b8d9ceabab96aa9ddbf059e44d0ee742e"
+primer-product@5.8.2:
+  version "5.8.2"
+  resolved "https://registry.yarnpkg.com/primer-product/-/primer-product-5.8.2.tgz#746228698a6a43fc03fe69af091d751bf5b6d334"
+  integrity sha512-Rhl6Sowk8sqvwbdKSYRz9KOH7932JXgKhyUY2eoawjANEtG8SeEKxNZH/Nl4gXJIcjUbz6lF3fsGAVD6YiGVEw==
   dependencies:
-    primer-support "4.5.2"
+    primer-alerts "1.5.12"
+    primer-avatars "1.5.9"
+    primer-blankslate "1.5.1"
+    primer-branch-name "1.0.10"
+    primer-labels "1.5.12"
+    primer-markdown "3.7.12"
+    primer-popover "0.1.7"
+    primer-progress "0.1.2"
+    primer-subhead "1.0.10"
+    primer-support "4.7.1"
 
-primer-utilities@4.9.0:
-  version "4.9.0"
-  resolved "https://registry.yarnpkg.com/primer-utilities/-/primer-utilities-4.9.0.tgz#288f6db98eefb02fe914711e8ece1d93acb4ef29"
+primer-progress@0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/primer-progress/-/primer-progress-0.1.2.tgz#fcb71f3a8fba8a4bf97543d6cc2bc17fc4873b40"
+  integrity sha512-vbdJWMO17f5pSdmhmHQe6MLewQBo0mMQ2MVnpzueQp7ruovse5usMPiaYO/+uquidEU4LQoRTtwoJGu1K9KJng==
   dependencies:
-    primer-support "4.5.2"
+    primer-support "4.7.1"
 
-primer@^10.3.0:
-  version "10.4.0"
-  resolved "https://registry.yarnpkg.com/primer/-/primer-10.4.0.tgz#20d336b51512e5977bbb6ef28cfd497d5e8d6137"
+primer-subhead@1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/primer-subhead/-/primer-subhead-1.0.10.tgz#f675346e5af8eb977a3e46e319fb7a7209db38cd"
+  integrity sha512-SBO4hHNZmoBLlIS+w5Hei4pylVUNyGCHLUxHvAj81eMkf7sDREy3BUNJWrU4ecFy2qpG0OOAX/D6PFYG0eDYSA==
   dependencies:
-    primer-alerts "1.5.5"
-    primer-avatars "1.5.2"
-    primer-base "1.7.0"
-    primer-blankslate "1.4.5"
-    primer-box "2.5.5"
-    primer-branch-name "1.0.3"
-    primer-breadcrumb "1.5.1"
-    primer-buttons "2.5.3"
-    primer-core "6.8.0"
-    primer-forms "2.1.0"
-    primer-labels "1.5.5"
-    primer-layout "1.4.5"
-    primer-markdown "3.7.5"
-    primer-marketing "6.2.0"
-    primer-marketing-buttons "1.0.4"
-    primer-marketing-support "1.5.0"
-    primer-marketing-type "1.4.5"
-    primer-marketing-utilities "1.6.1"
-    primer-navigation "1.5.3"
-    primer-page-headers "1.4.5"
-    primer-page-sections "1.4.5"
-    primer-popover "0.0.6"
-    primer-product "5.6.2"
-    primer-subhead "1.0.3"
-    primer-support "4.5.2"
-    primer-table-object "1.4.5"
-    primer-tables "1.4.5"
-    primer-tooltips "1.5.3"
-    primer-truncate "1.4.5"
-    primer-utilities "4.9.0"
+    primer-support "4.7.1"
+
+primer-support@4.7.1:
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/primer-support/-/primer-support-4.7.1.tgz#d573decb980f44455a86ee64fcca8fbb516ac490"
+  integrity sha512-BruDzdeTQW7UVsyR2eKxTWMHRzumCTs+Sc6I5reOwTmBIJ2o9CWtj1DvAO8l97+rzQiyajJWi/fJ7i2Zr9Uupg==
+
+primer-table-object@1.4.12:
+  version "1.4.12"
+  resolved "https://registry.yarnpkg.com/primer-table-object/-/primer-table-object-1.4.12.tgz#18563f4d8571bf839306b4f39643bb091e79ed6a"
+  integrity sha512-rzu4468rNdyrz4Jo1eJORsGyUy9YwXNeJ5kcmxg5+6z8A+PR7THd+eHCSE4nx1QUhd9qsUeOHDEdewJhfA2SCQ==
+  dependencies:
+    primer-support "4.7.1"
+
+primer-tables@1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/primer-tables/-/primer-tables-1.5.2.tgz#d5907bd1fa17eed080659c239d83faddfa68d3a7"
+  integrity sha512-VwR3MFgM5EAIvhNOVd9wAS31fFgtgT/bvbXHNSDBDlONswgxz12wIJ24d0ECBUetVKPxewooav8Rt1oznpC2ow==
+  dependencies:
+    primer-marketing-support "1.5.5"
+    primer-support "4.7.1"
+
+primer-tooltips@1.5.10:
+  version "1.5.10"
+  resolved "https://registry.yarnpkg.com/primer-tooltips/-/primer-tooltips-1.5.10.tgz#31d946fa681a5f72dbdb0ada0ba1ff852373f2b1"
+  integrity sha512-YB1XNFiB+ljs5k/jG2pyNv5unLCqIcq/m0F83R6qK0SRLgL+/j7w9haM6zuvDBO2o2BUBVSYEQ0yumReLV5/6w==
+  dependencies:
+    primer-support "4.7.1"
+
+primer-truncate@1.4.12:
+  version "1.4.12"
+  resolved "https://registry.yarnpkg.com/primer-truncate/-/primer-truncate-1.4.12.tgz#628ef7423d1c1abb2fbfa83382f45ef8111f409d"
+  integrity sha512-1uSNAfR25LEKIK7+jhK4qUwOOSgtIklTKB05Rz2g+Z18eEd9+6SxxMdsxBchQtJdx5iMHI1hJFFDlJmoLkTo4w==
+  dependencies:
+    primer-support "4.7.1"
+
+primer-utilities@4.14.2:
+  version "4.14.2"
+  resolved "https://registry.yarnpkg.com/primer-utilities/-/primer-utilities-4.14.2.tgz#65ad59355f074f25efc13b1db165ea36bfb91bd0"
+  integrity sha512-KE5JYqQB9Gf/3RIMj97jgfr1ArtlPoPTb4kuuia18xTz8gJ+Bek7jphNKsN+WuwhgZo8c0OSox2bn/Y89LDKvg==
+  dependencies:
+    primer-support "4.7.1"
+
+primer@^10.10.3:
+  version "10.10.3"
+  resolved "https://registry.yarnpkg.com/primer/-/primer-10.10.3.tgz#c0a824c7b6ed46ad535367a8c484b8c5f7128275"
+  integrity sha512-vpKQz1eilJ5A3BGUHe0zHoix+EgwiyfzDwpn6sJq8XEiGNrzJwm7zNfzJM181vLeyca+04p9VUWXoeTwvpjyqw==
+  dependencies:
+    primer-alerts "1.5.12"
+    primer-avatars "1.5.9"
+    primer-base "1.9.1"
+    primer-blankslate "1.5.1"
+    primer-box "2.5.12"
+    primer-branch-name "1.0.10"
+    primer-breadcrumb "1.5.8"
+    primer-buttons "2.6.3"
+    primer-core "6.10.7"
+    primer-forms "2.1.7"
+    primer-labels "1.5.12"
+    primer-layout "1.6.1"
+    primer-markdown "3.7.12"
+    primer-marketing "6.3.2"
+    primer-marketing-buttons "1.0.12"
+    primer-marketing-support "1.5.5"
+    primer-marketing-type "1.4.12"
+    primer-marketing-utilities "1.7.2"
+    primer-navigation "1.5.10"
+    primer-page-headers "1.5.2"
+    primer-page-sections "1.5.2"
+    primer-pagination "1.0.6"
+    primer-popover "0.1.7"
+    primer-product "5.8.2"
+    primer-progress "0.1.2"
+    primer-subhead "1.0.10"
+    primer-support "4.7.1"
+    primer-table-object "1.4.12"
+    primer-tables "1.5.2"
+    primer-tooltips "1.5.10"
+    primer-truncate "1.4.12"
+    primer-utilities "4.14.2"
 
 private@^0.1.6, private@^0.1.7, private@^0.1.8:
   version "0.1.8"
@@ -6054,8 +6103,9 @@ unset-value@^1.0.0:
     isobject "^3.0.0"
 
 upath@^1.0.0:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/upath/-/upath-1.0.4.tgz#ee2321ba0a786c50973db043a50b7bcba822361d"
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/upath/-/upath-1.1.0.tgz#35256597e46a581db4793d0ce47fa9aebfc9fabd"
+  integrity sha512-bzpH/oBhoS/QI/YtbkqCg6VEiPYjSZtrHQM6/QnJS6OL9pKUFLqb3aFh4Scvwm45+7iAgiMkLhSbaZxUqmrprw==
 
 uri-js@^3.0.2:
   version "3.0.2"
