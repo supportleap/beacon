@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.1'
+ruby '2.6.0'
 
 gem 'rails', '~> 5.2.0'
 gem 'pg', '~> 1.0'
@@ -14,7 +14,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'octicons_helper', '~> 4.3'
-gem 'graphql', '~> 1.8.0.pre10'
+gem 'graphql', '~> 1.9.0.pre1'
 gem 'graphql-client', '~> 0.12.2'
 gem 'chatops-controller', '~> 3.0', '>= 3.0.3'
 
