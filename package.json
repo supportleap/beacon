@@ -2,10 +2,10 @@
   "name": "beacon",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "3.4",
+    "@rails/webpacker": "3.5.5",
     "primer": "^10.3.0"
   },
   "devDependencies": {
-    "webpack-dev-server": "2.11.2"
+    "webpack-dev-server": ">=3.1.11"
   }
 }
