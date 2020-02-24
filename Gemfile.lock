@@ -61,7 +61,7 @@ GEM
       msgpack (~> 1.0)
     builder (3.2.4)
     byebug (11.1.1)
-    chatops-controller (3.1.1)
+    chatops-controller (4.1.0)
       rails (>= 4.0)
     coderay (1.1.2)
     concurrent-ruby (1.1.6)
@@ -206,7 +206,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap (>= 1.1.0)
-  chatops-controller (~> 3.0, >= 3.0.3)
+  chatops-controller (~> 4.1)
   dotenv-rails (~> 2.2, >= 2.2.2)
   factory_bot_rails (~> 4.8, >= 4.8.2)
   graphql (~> 1.10, >= 1.10.3)
