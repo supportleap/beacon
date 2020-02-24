@@ -24,8 +24,8 @@ EOS
   chatop :create_status,
   /set (?<level>red|yellow|green)(?: (?<message>(.*)))?/i,
   "set <level> <message> - Set the current status. Message is optional." do
-    level = params[:level].upcase
-    message = params[:message].blank? ? nil : params[:message]
+    level = jsonrpc_params[:level].upcase
+    message = jsonrpc_params[:message].blank? ? nil : jsonrpc_params[:message]
 
     data = execute_query(CreateStatusQuery, variables: { level: level, message: message })
 
