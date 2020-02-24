@@ -15,7 +15,7 @@ jobs:
          environment:
           POSTGRES_USER: beacon
           POSTGRES_DB: beacon-test
-          POSTGRES_PASSWORD: ""
+          POSTGRES_HOST_AUTH_METHOD: trust
 
     working_directory: ~/repo
 
