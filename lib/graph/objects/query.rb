@@ -3,7 +3,7 @@ module Graph
     class Query < Graph::Objects::Base
       description "The query root for Supportress."
 
-      field :node, field: GraphQL::Relay::Node.field
+      add_field(GraphQL::Types::Relay::NodeField)
 
       field :latest_status, Objects::Status, "The latest status event.", null: true
 

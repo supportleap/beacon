@@ -2,8 +2,8 @@
   "name": "beacon",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "3.5.5",
-    "primer": "^10.10.3"
+    "@primer/css": "^14.2.0",
+    "@rails/webpacker": "3.5.5"
   },
   "devDependencies": {
     "webpack-dev-server": ">=3.1.11"
