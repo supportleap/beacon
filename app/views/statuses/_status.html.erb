@@ -15,6 +15,6 @@
     <h3><%= status.message %></h3>
   </div>
   <span class="d-inline-block mt-3 text-gray text-small tooltipped tooltipped-s" aria-label="<%= status.created_at %>">
-    <%= DateTime.parse(status.created_at).in_time_zone.strftime("%B %d, %Y - %-I:%M %p %Z") %>
+    <%= status.created_at.in_time_zone.strftime("%B %d, %Y - %-I:%M %p %Z") %>
   </span>
 </div>

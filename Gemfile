@@ -3,10 +3,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.0'
 
-gem 'rails', '~> 5.2.0'
-gem 'pg', '~> 1.0'
+gem 'rails', '~> 6.0'
+gem 'pg', '~> 1.2', '>= 1.2.2'
 gem 'puma', '~> 3.11'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 6.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'webpacker'
 gem 'coffee-rails', '~> 4.2'
@@ -14,8 +14,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'octicons_helper', '~> 4.3'
-gem 'graphql', '~> 1.8.0.pre10'
-gem 'graphql-client', '~> 0.12.2'
+gem 'graphql', '~> 1.10', '>= 1.10.3'
+gem 'graphql-client', '~> 0.16.0'
 gem 'chatops-controller', '~> 3.0', '>= 3.0.3'
 
 group :development, :test do
