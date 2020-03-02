@@ -30,9 +30,14 @@ jobs:
           - v2-dependencies-
 
       - run:
+          name: set bundler path
+          command: |
+            bundle config set path 'vendor/gems'
+
+      - run:
           name: install dependencies
           command: |
-            bundle install --local --jobs=4 --retry=3 --path vendor/gems
+            bundle install --local --jobs=4 --retry=3
 
       - run:
           name: install packages
