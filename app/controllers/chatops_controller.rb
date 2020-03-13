@@ -9,37 +9,19 @@ class ChatopsController < ApplicationController
 :rotating_light: Beacon – Leap's status page.
 EOS
 
-  CreateStatusQuery = parse_query <<-'GRAPHQL'
-    mutation($level: StatusLevel!, $message: String) {
-      createStatus(input: { level: $level, message: $message }) {
-        status {
-          level
-          message
-        }
-        errors
-      }
-    }
-  GRAPHQL
-
   chatop :create_status,
   /set (?<level>red|yellow|green)(?: (?<message>(.*)))?/i,
   "set <level> <message> - Set the current status. Message is optional." do
-    level = jsonrpc_params[:level].upcase
-    message = jsonrpc_params[:message].blank? ? nil : jsonrpc_params[:message]
+    result = Statuses::CreateStatus.call(
+      level: jsonrpc_params[:level],
+      message: jsonrpc_params[:message],
+    )
 
-    data = execute_query(CreateStatusQuery, variables: { level: level, message: message })
-
-    status_result = data.create_status
-
-    if data.errors.any?
-      return jsonrpc_failure("Something went wrong: #{data.errors.messages.values.join(", ")}")
+    if result.success?
+      jsonrpc_success("Updated status: #{result.status.level.upcase} - #{result.status.message}")
+    else
+      jsonrpc_failure("Something went wrong: #{result.errors.join(", ")}")
     end
-
-    if status_result.errors.any?
-      return jsonrpc_failure("Something went wrong: #{status_result.errors.join(", ")}")
-    end
-
-    jsonrpc_success("Updated status: #{status_result.status.level} - #{status_result.status.message}")
   end
 
   CurrentStatusQuery = parse_query <<-'GRAPHQL'
