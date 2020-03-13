@@ -12,18 +12,20 @@ module Graph
       field :errors, [String], null: false
 
       def resolve(**inputs)
-        message = inputs[:message] || Status.default_message_for(inputs[:level])
-        status = Status.new(level: inputs[:level], message: message)
+        result = Statuses::CreateStatus.call(
+          level: inputs[:level],
+          message: inputs[:message],
+        )
 
-        if status.save
+        if result.success?
           {
-            status: status,
-            errors: []
+            status: result.status,
+            errors: [],
           }
         else
           {
             status: nil,
-            errors: status.errors.full_messages
+            errors: result.errors,
           }
         end
       end
