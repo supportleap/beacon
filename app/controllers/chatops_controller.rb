@@ -9,18 +9,6 @@ class ChatopsController < ApplicationController
 :rotating_light: Beacon – Leap's status page.
 EOS
 
-  CreateStatusQuery = parse_query <<-'GRAPHQL'
-    mutation($level: StatusLevel!, $message: String) {
-      createStatus(input: { level: $level, message: $message }) {
-        status {
-          level
-          message
-        }
-        errors
-      }
-    }
-  GRAPHQL
-
   chatop :create_status,
   /set (?<level>red|yellow|green)(?: (?<message>(.*)))?/i,
   "set <level> <message> - Set the current status. Message is optional." do
