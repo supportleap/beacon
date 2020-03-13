@@ -16,9 +16,15 @@ module Statuses
     end
 
     def call
+      status_message = if message.blank?
+        Status.default_message_for(level)
+      else
+        message
+      end
+
       status = Status.new(
         level: level,
-        message: message || Status.default_message_for(level),
+        message: status_message,
       )
 
       if status.save
