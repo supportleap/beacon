@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ChatopsController < ApplicationController
   skip_before_action :verify_authenticity_token
 
@@ -24,26 +26,11 @@ EOS
     end
   end
 
-  CurrentStatusQuery = parse_query <<-'GRAPHQL'
-    query {
-      latestStatus {
-        level
-        message
-      }
-    }
-  GRAPHQL
-
   chatop :current_status,
   /sup/,
   "sup - See the current status." do
-    data = execute_query(CurrentStatusQuery)
-
-    if data.errors.any?
-      return jsonrpc_failure("Something went wrong: #{data.errors.messages.values.join(", ")}")
-    end
-
-    if data.latest_status
-      jsonrpc_success("Latest status: #{data.latest_status.level} - #{data.latest_status.message}")
+    if status = Status.last
+      jsonrpc_success("Latest status: #{status.level.upcase} - #{status.message}")
     else
       jsonrpc_success("No status currently set. Set one with `set <level>`.")
     end
