@@ -1,0 +1,26 @@
+#!/bin/sh
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+if [ "$(uname -s)" = "Darwin" ]; then
+  brew update >/dev/null
+  brew bundle check &>/dev/null || brew bundle
+
+  brew bootstrap-rbenv-ruby
+  brew setup-nginx-conf beacon . config/dev/nginx.conf.erb
+
+  BUNDLE="brew bundle exec -- bundle"
+else
+  BUNDLE="bundle"
+fi
+
+echo "==> Installing gem dependencies…"
+gems_path=vendor/gems
+bundle check --path ${gems_path} 2>&1 > /dev/null || {
+  $BUNDLE install --path ${gems_path} --binstubs bin
+}
+
+echo "==> Installing packages…"
+bin/yarn
