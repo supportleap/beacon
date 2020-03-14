@@ -25,7 +25,7 @@ class StatusesControllerTest < ActionDispatch::IntegrationTest
     get "/statuses"
 
     assert_response :success
-    assert_select ".status-history .paginate-container a", "Next page"
+    assert_select ".status-history .paginate-container a", /Next/
   end
 
   test "#index shows message if no statuses" do

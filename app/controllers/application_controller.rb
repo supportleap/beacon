@@ -15,4 +15,12 @@ class ApplicationController < ActionController::Base
     response.data
   end
   helper_method :execute_query
+
+  def current_page(page_param = :page)
+    if params[page_param].blank? || !params[page_param].respond_to?(:to_i)
+      1
+    else
+      params[page_param].to_i.abs
+    end
+  end
 end

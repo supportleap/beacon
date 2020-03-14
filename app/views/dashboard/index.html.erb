@@ -1,36 +1,19 @@
-<%graphql
-  fragment Statuses on Query {
-    latestStatus {
-      ...Views::Dashboard::LatestStatus::Status
-    }
-
-    statuses(first: $first, includeLatest: false) {
-      nodes {
-        ...Views::Statuses::Status::Status
-      }
-    }
-  }
-%>
-<% data = Views::Dashboard::Index::Statuses.new(data) %>
-<% latest_status = data.latest_status %>
-<% statuses = data.statuses.nodes %>
 <section class="overall-status-container">
   <div class="big-status container-lg">
     <%= render partial: "dashboard/latest_status", locals: { status: latest_status } %>
   </div>
 </section>
 <section class="status-history mt-3">
-  <% has_statuses = statuses.count > 0 %>
   <div class="container-lg">
     <div class="history-header my-4 d-flex flex-items-center">
       <div class="col-10"><h2>Recent events</h2></div>
       <div class="col-2 text-right">
-        <% if has_statuses %>
+        <% if statuses.any? %>
           <a href="<%= statuses_path %>" class="mt-2">View history</a>
         <% end %>
       </div>
     </div>
-    <% if has_statuses %>
+    <% if statuses.any? %>
       <% statuses.each do |status| %>
         <%= render partial: "statuses/status", locals: { status: status } %>
       <% end %>
