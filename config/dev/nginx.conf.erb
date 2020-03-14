@@ -1,0 +1,17 @@
+upstream <%= name %> {
+ server localhost:3000;
+}
+
+server {
+  access_log <%= root %>/log/<%= name %>.access.log;
+  listen 8080;
+  listen [::]:8080;
+
+  root <%= root %>/public;
+  server_name <%= name %>.localhost ~^<%= name %>\.localhost\.\d+\.\d+\.\d+\.\d+\.xip\.io$;
+  proxy_set_header Host $http_host;
+
+  location / {
+    proxy_pass http://<%= name %>;
+  }
+}
