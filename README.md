@@ -18,6 +18,8 @@ There's a couple chatops commands supported:
 `.beacon sup` – See the current status.
 `.beacon set <level> <message>` - Set the current status. Message is optional.
 
+You'll have to configure the `CHATOPS_AUTH_PUBLIC_KEY` environment variable to use this.
+
 ## Developing
 
 ```
