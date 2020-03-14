@@ -13,7 +13,6 @@ gem 'turbolinks', '~> 5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'octicons_helper', '~> 4.3'
 gem 'graphql', '~> 1.10', '>= 1.10.3'
-gem 'graphql-client', '~> 0.16.0'
 gem 'chatops-controller', '~> 4.1'
 gem 'will_paginate', '~> 3.3'
 

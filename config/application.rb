@@ -17,34 +17,5 @@ module Beacon
     # the framework and any gems in your application.
     config.autoload_paths << Rails.root.join("lib")
     config.eager_load_paths << Rails.root.join("lib")
-
-    # TODO: Use railtie as soon as graphql-client is fixed for Rails 5
-    config.graphql = ActiveSupport::OrderedOptions.new
-
-    initializer "graphql.configure_log_subscriber" do |_app|
-      require "graphql/client/log_subscriber"
-      GraphQL::Client::LogSubscriber.attach_to :graphql
-    end
-
-    initializer "graphql.configure_erb_implementation" do |_app|
-      require "graphql/client/erubi_enhancer"
-      ActionView::Template::Handlers::ERB::Erubi.include(GraphQL::Client::ErubiEnhancer)
-    end
-
-    initializer "graphql.configure_views_namespace" do |app|
-      require "graphql/client/view_module"
-
-      path = app.paths["app/views"].first
-
-      client = Graph.client
-
-      config.watchable_dirs[path] = [:erb]
-
-      Object.const_set(:Views, Module.new do
-       extend GraphQL::Client::ViewModule
-        self.path = path
-        self.client = client
-      end)
-    end
   end
 end
