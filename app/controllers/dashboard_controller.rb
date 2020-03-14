@@ -1,16 +1,16 @@
 # frozen_string_literal: true
 
 class DashboardController < ApplicationController
-  INDEX_STATUS_COUNT = 5
-
-  IndexQuery = parse_query <<-'GRAPHQL'
-    query($first: Int!) {
-      ...Views::Dashboard::Index::Statuses
-    }
-  GRAPHQL
+  INDEX_STATUS_LIMIT = 5
 
   def index
-    data = execute_query(IndexQuery, variables: { first: INDEX_STATUS_COUNT })
-    render "dashboard/index", locals: { data: data }
+    all_statuses = Status.order("id DESC").limit(INDEX_STATUS_LIMIT + 1)
+    latest_status = all_statuses.first
+    statuses = all_statuses.drop(1)
+
+    render "dashboard/index", locals: {
+      latest_status: latest_status,
+      statuses: statuses,
+    }
   end
 end

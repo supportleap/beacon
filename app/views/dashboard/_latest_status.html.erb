@@ -1,21 +1,7 @@
-<%graphql
-  fragment Status on Status {
-    level
-    message
-    createdAt
-  }
-%>
-<% status = Views::Dashboard::LatestStatus::Status.new(status) %>
 <% if status.present? %>
   <section id="main-status">
     <div class="d-flex flex-items-center">
-      <% if status.level == "GREEN" %>
-        <span class="status-green mr-3"><%= octicon "primitive-dot", height: "48" %></span>
-      <% elsif status.level == "YELLOW" %>
-        <span class="status-yellow mr-3"><%= octicon "primitive-dot", height: "48" %></span>
-      <% else %>
-        <span class="status-red mr-3"><%= octicon "primitive-dot", height: "48" %></span>
-      <% end %>
+      <span class="status-<%= status.level %> mr-3"><%= octicon "primitive-dot", height: "48" %></span>
       <h1><%= status.message %></h1>
     </div>
     <div class="main-status-timestamp">

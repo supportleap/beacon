@@ -1,17 +1,6 @@
-<%graphql
-  fragment Status on Status {
-    level
-    message
-    createdAt
-  }
-%>
-<%
-  status = Views::Statuses::Status::Status.new(status)
-  level = status.level.downcase
-%>
 <div class="status-box bg-white mb-3 p-3 box-shadow-medium">
   <div class="d-flex flex-items-center">
-    <span class="status-<%= level %> mr-2"><%= octicon "primitive-dot", height: "24" %></span>
+    <span class="status-<%= status.level %> mr-2"><%= octicon "primitive-dot", height: "24" %></span>
     <h3><%= status.message %></h3>
   </div>
   <span class="d-inline-block mt-3 text-gray text-small tooltipped tooltipped-s" aria-label="<%= status.created_at %>">
